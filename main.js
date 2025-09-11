@@ -1,4 +1,8 @@
-const isAdult = document.createElement("h1");
+const mainHeading = document.createElement("h1");
+mainHeading.textContent = "Calculate your body mass index (BMI)";
+document.body.append(mainHeading);
+
+const isAdult = document.createElement("h2");
 isAdult.textContent = "Are You an Adult (18+)?";
 document.body.append(isAdult);
 

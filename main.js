@@ -10,6 +10,10 @@ const adultBtn = document.createElement("button");
 adultBtn.textContent = "Yes, I am 18 or Above";
 document.body.append(adultBtn);
 
+const underageBtn = document.createElement("button");
+underageBtn.textContent = "No, I am under 18";
+document.body.append(underageBtn);
+
 function bmiCalculator (weight, height) {
     const bmi = (weight / ((height / 100) ** 2)).toFixed(1);
 

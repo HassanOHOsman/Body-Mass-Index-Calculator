@@ -14,6 +14,18 @@ const underageBtn = document.createElement("button");
 underageBtn.textContent = "No, I am under 18";
 document.body.append(underageBtn);
 
+underageBtn.addEventListener("click", ()=> {
+  document.body.innerHTML = "";
+
+  const underageMessage = document.createElement("p");
+  underageMessage.textContent = `
+  This BMI calculator is designed for adults (18 years and older). 
+  For children and teenagers, BMI is calculated differently. 
+  Please consult a pediatric or health professional for accurate guidance.
+  `;
+  document.body.append(underageMessage);
+});
+
 function bmiCalculator (weight, height) {
     const bmi = (weight / ((height / 100) ** 2)).toFixed(1);
 

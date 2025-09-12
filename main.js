@@ -78,6 +78,7 @@ function bmiCalculator (weight, height) {
 
 adultBtn.addEventListener("click", () => {
     document.body.innerHTML = "";
+    document.body.append(mainHeading);
 
     const nextPage1 = document.createElement("h1");
     nextPage1.textContent = "Enter Your Height (cm):";
@@ -100,6 +101,7 @@ adultBtn.addEventListener("click", () => {
           alert("Enter a height between 139.7 cm and 243.8 cm");
         }
         document.body.innerHTML = "";
+        document.body.append(mainHeading);
 
         const nextPage2 = document.createElement("h1");
         nextPage2.textContent = "Enter Your Weigh (kg):";

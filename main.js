@@ -9,8 +9,9 @@ const isAdult = document.createElement("h2");
 isAdult.textContent = "Are You an Adult (18+)?";
 document.body.append(isAdult);
 
-isAdult.style.marginTop = "50px";
+isAdult.style.marginTop = "100px";
 isAdult.style.textAlign = "center";
+
 
 const btnsContainer = document.createElement("div");
 document.body.append(btnsContainer);
@@ -23,17 +24,21 @@ const adultBtn = document.createElement("button");
 adultBtn.textContent = "Yes, I am 18 or Above";
 btnsContainer.append(adultBtn);
 
-adultBtn.style.width = "200px";
+adultBtn.style.width = "220px";
 adultBtn.style.height = "40px";
 adultBtn.style.borderRadius = "15px";
+adultBtn.style.fontWeight = "bold";
+adultBtn.style.fontSize = "large"
 
 const underageBtn = document.createElement("button");
 underageBtn.textContent = "No, I am under 18";
 btnsContainer.append(underageBtn);
 
-underageBtn.style.width = "200px";
+underageBtn.style.width = "220px";
 underageBtn.style.height = "40px";
 underageBtn.style.borderRadius = "15px";
+underageBtn.style.fontWeight = "bold";
+underageBtn.style.fontSize = "large";
 
 underageBtn.addEventListener("click", ()=> {
   document.body.innerHTML = "";

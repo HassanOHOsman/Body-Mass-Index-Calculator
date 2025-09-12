@@ -2,17 +2,31 @@ const mainHeading = document.createElement("h1");
 mainHeading.textContent = "Calculate your body mass index (BMI)";
 document.body.append(mainHeading);
 
+mainHeading.style.marginTop = "70px";
+mainHeading.style.textAlign = "center";
+
 const isAdult = document.createElement("h2");
 isAdult.textContent = "Are You an Adult (18+)?";
 document.body.append(isAdult);
 
+isAdult.style.marginTop = "50px";
+isAdult.style.textAlign = "center";
+
+const btnsContainer = document.createElement("div");
+document.body.append(btnsContainer);
+
+btnsContainer.style.display = "flex";
+btnsContainer.style.justifyContent = "center";
+btnsContainer.style.gap = "20px"
+
 const adultBtn = document.createElement("button");
 adultBtn.textContent = "Yes, I am 18 or Above";
-document.body.append(adultBtn);
+btnsContainer.append(adultBtn);
 
 const underageBtn = document.createElement("button");
 underageBtn.textContent = "No, I am under 18";
-document.body.append(underageBtn);
+btnsContainer.append(underageBtn);
+
 
 underageBtn.addEventListener("click", ()=> {
   document.body.innerHTML = "";

@@ -80,21 +80,39 @@ adultBtn.addEventListener("click", () => {
     document.body.innerHTML = "";
     document.body.append(mainHeading);
 
-    const nextPage1 = document.createElement("h1");
+    const nextPage1 = document.createElement("h2");
     nextPage1.textContent = "Enter Your Height (cm):";
     document.body.append(nextPage1);
+
+    nextPage1.style.margin = "120px 0px 10px 0px";
+    nextPage1.style.textAlign = "center";
 
     const heightInput = document.createElement("input");
     heightInput.value = "";
     heightInput.type = "number";
-    heightInput.placeholder = "Enter Height in cm";
+    heightInput.placeholder = "Height in cm";
     heightInput.min = "139.7";
     heightInput.max = "243.8";
     document.body.append(heightInput);
 
+    heightInput.style.display = "block";
+    heightInput.style.margin = "20px auto";
+    heightInput.style.width = "100px";
+    heightInput.style.height = "30px";
+    heightInput.style.borderRadius = "5px"
+    heightInput.style.fontSize = "small";
+    
     const heightBtn = document.createElement("button");
     heightBtn.textContent = "Continue";
     document.body.append(heightBtn);
+
+    heightBtn.style.display = "block";
+    heightBtn.style.margin = "150px auto";
+    heightBtn.style.width = "220px";
+    heightBtn.style.height = "40px";
+    heightBtn.style.borderRadius = "15px";
+    heightBtn.style.fontWeight = "bold";
+    heightBtn.style.fontSize = "large";
 
     heightBtn.addEventListener("click", ()=> {
         if (heightInput.value < 139.7 || heightInput.value > 243.8) {

@@ -23,10 +23,17 @@ const adultBtn = document.createElement("button");
 adultBtn.textContent = "Yes, I am 18 or Above";
 btnsContainer.append(adultBtn);
 
+adultBtn.style.width = "200px";
+adultBtn.style.height = "40px";
+adultBtn.style.borderRadius = "15px";
+
 const underageBtn = document.createElement("button");
 underageBtn.textContent = "No, I am under 18";
 btnsContainer.append(underageBtn);
 
+underageBtn.style.width = "200px";
+underageBtn.style.height = "40px";
+underageBtn.style.borderRadius = "15px";
 
 underageBtn.addEventListener("click", ()=> {
   document.body.innerHTML = "";

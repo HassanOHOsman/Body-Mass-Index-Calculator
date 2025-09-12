@@ -9,7 +9,7 @@ const isAdult = document.createElement("h2");
 isAdult.textContent = "Are You an Adult (18+)?";
 document.body.append(isAdult);
 
-isAdult.style.marginTop = "100px";
+isAdult.style.margin = "120px 0px 40px 0px";
 isAdult.style.textAlign = "center";
 
 

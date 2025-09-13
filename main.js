@@ -121,21 +121,39 @@ adultBtn.addEventListener("click", () => {
         document.body.innerHTML = "";
         document.body.append(mainHeading);
 
-        const nextPage2 = document.createElement("h1");
+        const nextPage2 = document.createElement("h2");
         nextPage2.textContent = "Enter Your Weigh (kg):";
         document.body.append(nextPage2);
+
+        nextPage2.style.margin = "120px 0px 10px 0px";
+        nextPage2.style.textAlign = "center";
 
         const weighttInput = document.createElement("input");
         weighttInput.value = "";
         weighttInput.type = "number";
-        weighttInput.placeholder = "Enter Height in cm";
+        weighttInput.placeholder = "Weight in kg";
         weighttInput.min = "25.4";
         weighttInput.max = "317.5";
         document.body.append(weighttInput);
 
+        weighttInput.style.display = "block";
+        weighttInput.style.margin = "20px auto";
+        weighttInput.style.width = "100px";
+        weighttInput.style.height = "30px";
+        weighttInput.style.borderRadius = "5px";
+        weighttInput.style.fontSize = "small";
+
         const calculateBtn = document.createElement("button");
         calculateBtn.textContent = "Calculate";
         document.body.append(calculateBtn);
+
+        calculateBtn.style.display = "block";
+        calculateBtn.style.margin = "150px auto";
+        calculateBtn.style.width = "220px";
+        calculateBtn.style.height = "40px";
+        calculateBtn.style.borderRadius = "15px";
+        calculateBtn.style.fontWeight = "bold";
+        calculateBtn.style.fontSize = "large";
 
         calculateBtn.addEventListener("click", () => {
             document.body.innerHTML = "";

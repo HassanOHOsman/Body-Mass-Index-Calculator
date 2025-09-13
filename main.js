@@ -122,7 +122,7 @@ adultBtn.addEventListener("click", () => {
         document.body.append(mainHeading);
 
         const nextPage2 = document.createElement("h2");
-        nextPage2.textContent = "Enter Your Weigh (kg):";
+        nextPage2.textContent = "Enter Your Weight (kg):";
         document.body.append(nextPage2);
 
         nextPage2.style.margin = "120px 0px 10px 0px";
